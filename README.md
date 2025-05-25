@@ -23,6 +23,10 @@ Current Upgradable Versions From Evaluation With EvalPatch v1:
 - takeown /F "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval" /R /D Y
 - icacls "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval" /grant %username%:F /T
 - rmdir /S /Q "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval"
+- taskkill /f /im explorer.exe
+- start explorer.exe
+- echo Neccesary Action Were Completed! You Can Go Ahead And Activate Windows Normally Now. & pause & exit
+
 
 **Step 3.** Insert Your Own Key In The Settings To Activate _(OR USE **MAS BY MASSGRAVEL** WHICH IM NOT GONNA PROVIDE THE SCRIPT FOR, AND SELECT KMS38. WHICH IS NOT RECOMMENDED THO SINCE ITS A TEMPORARY ACTIVATION AND ITS **AGAINST THE GUIDELINES BY MICROSOFT**)_
 
@@ -38,5 +42,9 @@ Current Upgradable Versions From Evaluation With EvalPatch v1:
 - takeown /F "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval" /R /D Y
 - icacls "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" /grant %username%:F /T
 - rmdir /S /Q "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval"
+- taskkill /f /im explorer.exe
+- start explorer.exe
+- echo Neccesary Action Were Completed! You Can Go Ahead And Activate Windows Normally Now. & pause & exit
+
 
 **Step 3.** Insert Your Own Key In The Settings To Activate _(OR USE **MAS BY MASSGRAVEL** WHICH IM NOT GONNA PROVIDE THE SCRIPT FOR, AND SELECT HWID WHICH EVEN THO ITS PERMANENT UNLIKE KMS38, ITS STILL NOT RECOMMENDED SINCE ITS **AGAINST THE GUIDELINES BY MICROSOFT**)_
