@@ -6,7 +6,7 @@ Current Upgradable Versions From Evaluation With EvalPatch v1:
 
   _**!!!WARNING!!! EvalPatch v1 DOES NOT guarantee support with ISOs that are IoT LTSC out of the box. its coming soon in EvalPatch v1.1 tho so stay tuned!**_
 
-# Activate Windows 10/11 Enterprise LTSC
+# Activate Windows 10 Enterprise LTSC
 
 **Step 1.** Copy The Folders Named: **csvlk-pack** and **EnterpriseS** to _C:\Windows\System32\spp\tokens\skus_
 
