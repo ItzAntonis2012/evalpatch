@@ -34,8 +34,11 @@ Current Upgradable Versions From Evaluation With EvalPatch v1:
 - cscript.exe %windir%\system32\slmgr.vbs /ckms >nul 2>&1
 - cscript.exe %windir%\system32\slmgr.vbs /cpky >nul 2>&1
 - takeown /F "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval" /R /D Y
+- takeown /F "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" /R /D Y
+- icacls "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval" /grant %username%:F /T
 - icacls "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" /grant %username%:F /T
 - rmdir /S /Q "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval"
+- rmdir /S /Q "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval"
 - taskkill /f /im explorer.exe
 - start explorer.exe
 
