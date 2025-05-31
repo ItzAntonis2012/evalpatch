@@ -24,7 +24,7 @@ Current Upgradable Versions From Evaluation With EvalPatch v1:
 
 **Step 3.** Insert Your Own Key In The Settings To Activate _(OR USE **MAS BY MASSGRAVEL** WHICH IM NOT GONNA PROVIDE THE SCRIPT FOR, AND SELECT HWID. ITS NOT RECOMMENDED THO SINCE ITS **AGAINST THE GUIDELINES BY MICROSOFT**)_
 
-**| Activate Windows 10 Enterprise IoT LTSC |**
+**| Activate Windows 10 Enterprise IoT LTSC (Only For Windows 10 IoT LTSC 2021)|**
 
 **Step 1.** Copy The Folders Named: **csvlk-pack** , **EnterpriseS** and **IoTEnterpriseS** to _C:\Windows\System32\spp\tokens\skus_
 
