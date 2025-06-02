@@ -1,7 +1,6 @@
 # Activate Windows 10/11 Enterprise LTSC/IoT LTSC
 
 Current Upgradable Versions From Evaluation With EvalPatch v1:
-- Windows 10 Enterprise IoT LTSC 2019
 - Windows 10 Enterprise LTSC 2019
 - Windows 10 Enterprise IoT LTSC 2021
 - Windows 10 Enterprise LTSC 2021
