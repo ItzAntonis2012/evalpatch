@@ -7,7 +7,7 @@ Current Upgradable Versions From Evaluation With EvalPatch v1.1:
 - Windows 11 Enterprise IoT LTSC 2024
 - Windows 11 Enterprise LTSC 2024
 
-The Following Steps are For Manual Execution. If you wish to proceed with an automated version, you can download the repository and do the following steps. Step 1: Move the batch file into your desired's version folder (e.g. Windows 10 LTSC & IoT LTSC 2021). Step 2: Open the batch and select the version you pasted the batch Into. 
+The Following Steps are For Manual Execution. If you wish to proceed with an automated version, you can download the repository and do the following steps. Step 1: Move the batch file into your desired's version folder (e.g. Windows 10 LTSC & IoT LTSC 2021). Step 2: Open the batch and select the version you pasted the batch Into. And you're done!
 
 # For Windows 10 Enterprise
 **| Activate Windows 10 Enterprise LTSC |**
