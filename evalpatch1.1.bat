@@ -95,6 +95,7 @@ if exist "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" (
 )
 taskkill /f /im explorer.exe
 start explorer.exe
+echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
 pause
 exit
 
@@ -123,6 +124,7 @@ if exist "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" (
 )
 taskkill /f /im explorer.exe
 start explorer.exe
+echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
 pause
 exit
 
@@ -158,6 +160,7 @@ if exist "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" (
 )
 taskkill /f /im explorer.exe
 start explorer.exe
+echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
 pause
 exit
 
