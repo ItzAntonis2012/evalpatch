@@ -7,6 +7,8 @@ Current Upgradable Versions From Evaluation With EvalPatch v1.0.1:
 - Windows 11 Enterprise IoT LTSC 2024
 - Windows 11 Enterprise LTSC 2024
 
+!!! WARNING !!! While The Scripts Are Running (Both on Automated And Manual Execution),  at the end they kill the explorer.exe process. So i kindly ask you to make sure you are not doing any data transfer while the process advances.
+
 The Following Steps are For Manual Execution. If you wish to proceed with an automated version, you can download the repository and run the batch file. It is not recommended in the automated version to change folder location and name since the batch will not be able to find the files.
 
 # For Windows 10 Enterprise
