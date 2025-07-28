@@ -41,7 +41,7 @@ cls
     reg delete "HKCU\SOFTWARE\Microsoft\Windows Script Host\Settings" /v "Enabled" /f
     reg delete "HKLM\SOFTWARE\Microsoft\Windows Script Host\Settings" /v "Enabled" /f
 )
-if not exist "(Batch Directory)\Windows 10 Enterprise LTSC 2019,2021\EnterpriseS" (
+if not exist "%~dp0Windows 10 Enterprise LTSC 2019,2021\EnterpriseS" (
     echo Folder "EnterpriseS" not found in: "(Batch Directory)\Windows 10 Enterprise LTSC 2019,2021"
     pause
     goto menu
