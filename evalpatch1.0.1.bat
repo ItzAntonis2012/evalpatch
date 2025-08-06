@@ -82,12 +82,12 @@ if exist "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" (
 )
 taskkill /f /im explorer.exe
 start explorer.exe
-echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
 if defined defaultDisabled if "%defaultDisabled%"=="0" (
     echo(Disabling CSCRIPT ... 
     reg add "HKCU\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
     reg add "HKLM\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
 )
+echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
 pause
 exit /b
 
@@ -140,12 +140,12 @@ if exist "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" (
 )
 taskkill /f /im explorer.exe
 start explorer.exe
-echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
 if defined defaultDisabled if "%defaultDisabled%"=="0" (
     echo(Disabling CSCRIPT ... 
     reg add "HKCU\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
     reg add "HKLM\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
 )
+echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
 pause
 exit /b
 
@@ -198,12 +198,12 @@ if exist "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" (
 )
 taskkill /f /im explorer.exe
 start explorer.exe
-echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
 if defined defaultDisabled if "%defaultDisabled%"=="0" (
     echo(Disabling CSCRIPT ... 
     reg add "HKCU\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
     reg add "HKLM\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
 )
+echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
 pause
 exit /b
 
@@ -256,11 +256,13 @@ if exist "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" (
 )
 taskkill /f /im explorer.exe
 start explorer.exe
-echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
 if defined defaultDisabled if "%defaultDisabled%"=="0" (
     echo(Disabling CSCRIPT ... 
     reg add "HKCU\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
     reg add "HKLM\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
 )
+echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
+)
 pause
 exit /b
+
