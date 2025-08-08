@@ -11,15 +11,15 @@ cd /d "%~dp0"
 title Evaluation Patch By ItzAntonis2012
 :menu
 cls
-echo ╔══════════════════════════════════════════╗
-echo ║             EvalPatch v1.0.1             ║
-echo ╠══════════════════════════════════════════╣
-echo ║  1. Windows 10 Enterprise LTSC 2019/2021 ║
-echo ║  2. Windows 10 Enterprise IoT LTSC 2021  ║     
-echo ║  3. Windows 11 Enterprise LTSC 2024      ║
-echo ║  4. Windows 11 Enterprise IoT LTSC 2024  ║
-echo ║  0. Exit                                 ║
-echo ╚══════════════════════════════════════════╝
+echo +==========================================+
+echo ^|             EvalPatch v1.0.1             ^|
+echo +==========================================+
+echo ^|  1. Windows 10 Enterprise LTSC 2019/2021 ^|
+echo ^|  2. Windows 10 Enterprise IoT LTSC 2021  ^|     
+echo ^|  3. Windows 11 Enterprise LTSC 2024      ^|
+echo ^|  4. Windows 11 Enterprise IoT LTSC 2024  ^|
+echo ^|  0. Exit                                 ^|
+echo +==========================================+
 echo.
 set /p choice=Select An Option: 
 
@@ -87,7 +87,7 @@ if defined defaultDisabled if "%defaultDisabled%"=="0" (
     reg add "HKCU\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
     reg add "HKLM\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
 )
-echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
+echo Windows Was De-Evaluated Successfully! You Can Go Ahead and Activate it Now.
 pause
 exit /b
 
@@ -145,7 +145,7 @@ if defined defaultDisabled if "%defaultDisabled%"=="0" (
     reg add "HKCU\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
     reg add "HKLM\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
 )
-echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
+echo Windows Was De-Evaluated Successfully! You Can Go Ahead and Activate it Now.
 pause
 exit /b
 
@@ -203,7 +203,7 @@ if defined defaultDisabled if "%defaultDisabled%"=="0" (
     reg add "HKCU\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
     reg add "HKLM\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
 )
-echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
+echo Windows Was De-Evaluated Successfully! You Can Go Ahead and Activate it Now.
 pause
 exit /b
 
@@ -261,8 +261,7 @@ if defined defaultDisabled if "%defaultDisabled%"=="0" (
     reg add "HKCU\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
     reg add "HKLM\Software\Microsoft\Windows Script Host\Settings" /v "Enabled" /t REG_DWORD /d "0" /f
 )
-echo Windows Was De-Evaluated Succesfully! You Can Go Ahead and Activate it Now.
-)
+echo Windows Was De-Evaluated Successfully! You Can Go Ahead and Activate it Now.
 pause
 exit /b
 
