@@ -1,14 +1,12 @@
 # Activate Windows 10/11 Enterprise LTSC/IoT LTSC
 
-Current Upgradable Versions From Evaluation With EvalPatch v1.0.1:
+Current Upgradable Versions From Evaluation With EvalPatch v1.1:
 - Windows 10 Enterprise LTSC 2019
 - Windows 10 Enterprise IoT LTSC 2021
 - Windows 10 Enterprise LTSC 2021
 - Windows 11 Enterprise IoT LTSC 2024
 - Windows 11 Enterprise LTSC 2024
-
-!!! WARNING !!! While The Scripts Are Running (Both on Automated And Manual Execution),  at the end they kill the explorer.exe process. So i kindly ask you to make sure you are not doing any data transfer while the process advances.
-
+  
 The Following Steps are For Manual Execution. If you wish to proceed with an automated version, you can download the repository and run the batch file. It is not recommended in the automated version to change folder location and name since the batch will not be able to find the files.
 
 # For Windows 10 Enterprise
@@ -29,8 +27,7 @@ icacls "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval" /grant %username%:F
 icacls "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" /grant %username%:F /T
 rmdir /S /Q "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval"
 rmdir /S /Q "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval"
-taskkill /f /im explorer.exe
-start explorer.exe
+powershell -NoProfile -Command "Add-Type -Name WinAPI -Namespace Native -MemberDefinition '[DllImport(\"user32.dll\")] public static extern IntPtr GetShellWindow(); [DllImport(\"user32.dll\")] public static extern int SendMessageW(IntPtr hWnd, uint Msg, UIntPtr wParam, IntPtr lParam);'; $hwnd = [Native.WinAPI]::GetShellWindow(); $WM_COMMAND=0x0111; $ID_REFRESH=[UIntPtr]::new(41504); [Native.WinAPI]::SendMessageW($hwnd,$WM_COMMAND,$ID_REFRESH,[IntPtr]::Zero)" > nul 2>&1
 exit
 ```
 
@@ -53,8 +50,7 @@ icacls "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval" /grant %username%:F
 icacls "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" /grant %username%:F /T
 rmdir /S /Q "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval"
 rmdir /S /Q "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval"
-taskkill /f /im explorer.exe
-start explorer.exe
+powershell -NoProfile -Command "Add-Type -Name WinAPI -Namespace Native -MemberDefinition '[DllImport(\"user32.dll\")] public static extern IntPtr GetShellWindow(); [DllImport(\"user32.dll\")] public static extern int SendMessageW(IntPtr hWnd, uint Msg, UIntPtr wParam, IntPtr lParam);'; $hwnd = [Native.WinAPI]::GetShellWindow(); $WM_COMMAND=0x0111; $ID_REFRESH=[UIntPtr]::new(41504); [Native.WinAPI]::SendMessageW($hwnd,$WM_COMMAND,$ID_REFRESH,[IntPtr]::Zero)" > nul 2>&1
 exit
 ```
 
@@ -79,8 +75,7 @@ icacls "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval" /grant %username%:F
 icacls "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" /grant %username%:F /T
 rmdir /S /Q "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval"
 rmdir /S /Q "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval"
-taskkill /f /im explorer.exe
-start explorer.exe
+powershell -NoProfile -Command "Add-Type -Name WinAPI -Namespace Native -MemberDefinition '[DllImport(\"user32.dll\")] public static extern IntPtr GetShellWindow(); [DllImport(\"user32.dll\")] public static extern int SendMessageW(IntPtr hWnd, uint Msg, UIntPtr wParam, IntPtr lParam);'; $hwnd = [Native.WinAPI]::GetShellWindow(); $WM_COMMAND=0x0111; $ID_REFRESH=[UIntPtr]::new(41504); [Native.WinAPI]::SendMessageW($hwnd,$WM_COMMAND,$ID_REFRESH,[IntPtr]::Zero)" > nul 2>&1
 exit
 ```
 
@@ -103,8 +98,7 @@ icacls "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval" /grant %username%:F
 icacls "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval" /grant %username%:F /T
 rmdir /S /Q "C:\Windows\System32\spp\tokens\skus\EnterpriseSEval"
 rmdir /S /Q "C:\Windows\System32\spp\tokens\skus\IoTEnterpriseSEval"
-taskkill /f /im explorer.exe
-start explorer.exe
+powershell -NoProfile -Command "Add-Type -Name WinAPI -Namespace Native -MemberDefinition '[DllImport(\"user32.dll\")] public static extern IntPtr GetShellWindow(); [DllImport(\"user32.dll\")] public static extern int SendMessageW(IntPtr hWnd, uint Msg, UIntPtr wParam, IntPtr lParam);'; $hwnd = [Native.WinAPI]::GetShellWindow(); $WM_COMMAND=0x0111; $ID_REFRESH=[UIntPtr]::new(41504); [Native.WinAPI]::SendMessageW($hwnd,$WM_COMMAND,$ID_REFRESH,[IntPtr]::Zero)" > nul 2>&1
 exit
 ```
 
